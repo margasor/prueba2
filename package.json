@@ -1,0 +1,25 @@
+{
+  "name": "proyecto1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/margasor/prueba2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/margasor/prueba2/issues"
+  },
+  "homepage": "https://github.com/margasor/prueba2#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^8.57.1",
+    "globals": "^17.4.0"
+  }
+}
