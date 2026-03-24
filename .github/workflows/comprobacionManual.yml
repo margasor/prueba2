@@ -1,0 +1,23 @@
+name: Workflow Manual - Info del Repo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  manual-info:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Mensaje de ejecución manual
+        run: |
+          echo "Este workflow ha sido lanzado manualmente"
+
+      - name: Mostrar información del contexto
+        run: |
+          echo "Repositorio:"
+          echo "${{ github.repository }}"
+          echo ""
+          echo "Usuario que lanzó el workflow:"
+          echo "${{ github.actor }}"
