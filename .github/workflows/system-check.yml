@@ -1,0 +1,23 @@
+name: System Check Básico
+
+on:
+  push:
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Mostrar información del sistema
+        run: |
+          echo "Sistema:"
+          uname -a
+          echo ""
+          echo "Usuario:"
+          whoami
+          echo ""
+          echo "Archivos:"
+          ls -la
